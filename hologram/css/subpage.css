@@ -1,0 +1,68 @@
+body, html
+{
+    padding: 0;
+    margin: 0;
+	font-family: µ¸¿ò;
+/*    background-color:aqua;*/
+}
+.subtitle {
+	 font-size: 14px;
+	 font-weight:bold;
+}
+
+.tbl {
+     font-size: 12px;
+     font-weight: normal;
+     background-color:#f1f1f1;
+     border-width: 1px;
+     border-style:solid none none none;
+     border-color: #d9d9d9;
+     border-spacing: 0px;
+}
+
+.th1 {
+	 background-color:#f8f8f8;
+	 border-width: 1px;
+	 border-style:none solid solid solid;
+	 border-color: #d9d9d9;
+	 font-size: 11px;
+}
+
+.th2 {
+	 background-color:#f8f8f8;
+	 border-width: 1px;
+	 border-style:none solid solid none;
+	 border-color: #d9d9d9;
+	 font-size: 11px;
+}
+
+.td1 {
+	  border-width: 1px;
+	  border-style:none solid solid solid;
+	  border-color: #d9d9d9;
+}
+
+.td2 {
+	 border-width: 1px;
+	 border-style:none solid solid none; 
+	 border-color: #d9d9d9;
+}
+
+.tblnoborder {
+     font-size: 12px;
+     font-weight: normal;
+     background-color:f1f1f1;
+     border-style:none;
+     border-color: #d9d9d9;
+     border-spacing: 0px;
+}
+
+.tdnoborder {
+	  border-style:none;
+	  border-color: #d9d9d9;
+}
+
+.chkbox {
+	 width:20px;
+	 height:20px;
+}

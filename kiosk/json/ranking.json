@@ -1,0 +1,742 @@
+{
+    "tables": [
+        {
+            "floor": "B1F",
+            "category": "GOURMET 494",
+            "list": [
+                {
+                    "disptitle": "WEST B1F GOURMET 494",
+                    "ranking": "1",
+                    "brand": "카페마마스",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494",
+                    "ranking": "2",
+                    "brand": "속초코다리냉면",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494",
+                    "ranking": "3",
+                    "brand": "브루클린더버거",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494",
+                    "ranking": "4",
+                    "brand": "핏제리아디부자",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494",
+                    "ranking": "5",
+                    "brand": "감촌순두부",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494",
+                    "ranking": "6",
+                    "brand": "미즈호by스시마츠모토",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494",
+                    "ranking": "7",
+                    "brand": "청",
+                    "product": "없음",
+                    "change": "+1"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494",
+                    "ranking": "8",
+                    "brand": "바토스인터내셔널",
+                    "product": "없음",
+                    "change": "-1"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494",
+                    "ranking": "9",
+                    "brand": "더플레이트28",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494",
+                    "ranking": "10",
+                    "brand": "오세요",
+                    "product": "없음",
+                    "change": "0"
+                }
+            ]
+        },
+        {
+            "floor": "B1F",
+            "category": "GOURMET 494(아이템)",
+            "list": [
+                {
+                    "disptitle": "WEST B1F GOURMET 494(ITEM)",
+                    "ranking": "1",
+                    "brand": "속초코다리냉면",
+                    "product": "코다리냉면          ",
+                    "change": "+1"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494(ITEM)",
+                    "ranking": "2",
+                    "brand": "속초코다리냉면",
+                    "product": "코다리냉면+만두     ",
+                    "change": "-1"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494(ITEM)",
+                    "ranking": "3",
+                    "brand": "카페마마스",
+                    "product": "리코타치즈샐러드    ",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494(ITEM)",
+                    "ranking": "4",
+                    "brand": "카페마마스",
+                    "product": "청포도 주스         ",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494(ITEM)",
+                    "ranking": "5",
+                    "brand": "브루클린더버거",
+                    "product": "브루클린웍스        ",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494(ITEM)",
+                    "ranking": "6",
+                    "brand": "감촌순두부",
+                    "product": "순두부              ",
+                    "change": "+3"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494(ITEM)",
+                    "ranking": "7",
+                    "brand": "카페마마스",
+                    "product": "감자스프            ",
+                    "change": "-1"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494(ITEM)",
+                    "ranking": "8",
+                    "brand": "핏제리아디부자",
+                    "product": "부자클라시카        ",
+                    "change": "+3"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494(ITEM)",
+                    "ranking": "9",
+                    "brand": "브루클린더버거",
+                    "product": "세트메뉴            ",
+                    "change": "-1"
+                },
+                {
+                    "disptitle": "WEST B1F GOURMET 494(ITEM)",
+                    "ranking": "10",
+                    "brand": "카페마마스",
+                    "product": "카페마마스          ",
+                    "change": "-3"
+                }
+            ]
+        },
+        {
+            "floor": "1F",
+            "category": "화장품",
+            "list": [
+                {
+                    "disptitle": "WEST 1F 화장품",
+                    "ranking": "1",
+                    "brand": "YVES SAINT LAURENT COSMETICS",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 1F 화장품",
+                    "ranking": "2",
+                    "brand": "SHU UEMURA",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 1F 화장품",
+                    "ranking": "3",
+                    "brand": "CHANEL COSMETICS",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 1F 화장품",
+                    "ranking": "4",
+                    "brand": "AMOREPACIFIC",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 1F 화장품",
+                    "ranking": "5",
+                    "brand": "AVEDA",
+                    "product": "없음",
+                    "change": "+2"
+                },
+                {
+                    "disptitle": "WEST 1F 화장품",
+                    "ranking": "6",
+                    "brand": "L’OCCITANE",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 1F 화장품",
+                    "ranking": "7",
+                    "brand": "AESOP",
+                    "product": "없음",
+                    "change": "+1"
+                },
+                {
+                    "disptitle": "WEST 1F 화장품",
+                    "ranking": "8",
+                    "brand": "NARS",
+                    "product": "없음",
+                    "change": "-3"
+                },
+                {
+                    "disptitle": "WEST 1F 화장품",
+                    "ranking": "9",
+                    "brand": "DIOR COSMETICS",
+                    "product": "없음",
+                    "change": "N"
+                },
+                {
+                    "disptitle": "WEST 1F 화장품",
+                    "ranking": "10",
+                    "brand": "LE LABO",
+                    "product": "없음",
+                    "change": "N"
+                }
+            ]
+        },
+        {
+            "floor": "1F",
+            "category": "B1F GOURMET 494",
+            "list": [
+                {
+                    "disptitle": "WEST 1F GOURMET 494",
+                    "ranking": "1",
+                    "brand": "카페마마스",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494",
+                    "ranking": "2",
+                    "brand": "속초코다리냉면",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494",
+                    "ranking": "3",
+                    "brand": "브루클린더버거",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494",
+                    "ranking": "4",
+                    "brand": "핏제리아디부자",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494",
+                    "ranking": "5",
+                    "brand": "감촌순두부",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494",
+                    "ranking": "6",
+                    "brand": "미즈호by스시마츠모토",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494",
+                    "ranking": "7",
+                    "brand": "청",
+                    "product": "없음",
+                    "change": "+1"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494",
+                    "ranking": "8",
+                    "brand": "바토스인터내셔널",
+                    "product": "없음",
+                    "change": "-1"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494",
+                    "ranking": "9",
+                    "brand": "더플레이트28",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494",
+                    "ranking": "10",
+                    "brand": "오세요",
+                    "product": "없음",
+                    "change": "0"
+                }
+            ]
+        },
+        {
+            "floor": "1F",
+            "category": "B1F GOURMET 494(아이템)",
+            "list": [
+                {
+                    "disptitle": "WEST 1F GOURMET 494(ITEM)",
+                    "ranking": "1",
+                    "brand": "속초코다리냉면",
+                    "product": "코다리냉면          ",
+                    "change": "+1"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494(ITEM)",
+                    "ranking": "2",
+                    "brand": "속초코다리냉면",
+                    "product": "코다리냉면+만두     ",
+                    "change": "-1"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494(ITEM)",
+                    "ranking": "3",
+                    "brand": "카페마마스",
+                    "product": "리코타치즈샐러드    ",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494(ITEM)",
+                    "ranking": "4",
+                    "brand": "카페마마스",
+                    "product": "청포도 주스         ",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494(ITEM)",
+                    "ranking": "5",
+                    "brand": "브루클린더버거",
+                    "product": "브루클린웍스        ",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494(ITEM)",
+                    "ranking": "6",
+                    "brand": "감촌순두부",
+                    "product": "순두부              ",
+                    "change": "+3"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494(ITEM)",
+                    "ranking": "7",
+                    "brand": "카페마마스",
+                    "product": "감자스프            ",
+                    "change": "-1"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494(ITEM)",
+                    "ranking": "8",
+                    "brand": "핏제리아디부자",
+                    "product": "부자클라시카        ",
+                    "change": "+3"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494(ITEM)",
+                    "ranking": "9",
+                    "brand": "브루클린더버거",
+                    "product": "세트메뉴            ",
+                    "change": "-1"
+                },
+                {
+                    "disptitle": "WEST 1F GOURMET 494(ITEM)",
+                    "ranking": "10",
+                    "brand": "카페마마스",
+                    "product": "카페마마스          ",
+                    "change": "-3"
+                }
+            ]
+        },
+        {
+            "floor": "2F",
+            "category": "의류",
+            "list": [
+                {
+                    "disptitle": "WEST 2F 의류",
+                    "ranking": "1",
+                    "brand": "OBZEE",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 2F 의류",
+                    "ranking": "2",
+                    "brand": "AQUILANO RIMONDI",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 2F 의류",
+                    "ranking": "3",
+                    "brand": "PAUL & JOE",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 2F 의류",
+                    "ranking": "4",
+                    "brand": "UNDERCOVER",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 2F 의류",
+                    "ranking": "5",
+                    "brand": "KUHO",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 2F 의류",
+                    "ranking": "6",
+                    "brand": "HACHE",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 2F 의류",
+                    "ranking": "7",
+                    "brand": "VIVIENNE WESTWOOD",
+                    "product": "없음",
+                    "change": "0"
+                }
+            ]
+        },
+        {
+            "floor": "3F",
+            "category": "의류",
+            "list": [
+                {
+                    "disptitle": "WEST 3F 의류",
+                    "ranking": "1",
+                    "brand": "O'2ND",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 3F 의류",
+                    "ranking": "2",
+                    "brand": "MARC BY MARC JACOBS",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 3F 의류",
+                    "ranking": "3",
+                    "brand": "MAJE",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 3F 의류",
+                    "ranking": "4",
+                    "brand": "CLUB MONACO",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 3F 의류",
+                    "ranking": "5",
+                    "brand": "BOMBYX M. MOORE",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 3F 의류",
+                    "ranking": "6",
+                    "brand": "LOW CLASSIC",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 3F 의류",
+                    "ranking": "7",
+                    "brand": "STEVE J&YONI P",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 3F 의류",
+                    "ranking": "8",
+                    "brand": "IRO",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 3F 의류",
+                    "ranking": "9",
+                    "brand": "VINCE",
+                    "product": "없음",
+                    "change": "0"
+                }
+            ]
+        },
+        {
+            "floor": "3F",
+            "category": "슈즈",
+            "list": [
+                {
+                    "disptitle": "WEST 3F 슈즈",
+                    "ranking": "1",
+                    "brand": "MARC BY MARC JACOBS",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 3F 슈즈",
+                    "ranking": "2",
+                    "brand": "TORY BURCH",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 3F 슈즈",
+                    "ranking": "3",
+                    "brand": "PREMIATA",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 3F 슈즈",
+                    "ranking": "4",
+                    "brand": "ASH",
+                    "product": "없음",
+                    "change": "N"
+                },
+                {
+                    "disptitle": "WEST 3F 슈즈",
+                    "ranking": "5",
+                    "brand": "HELENA &KRISTIE",
+                    "product": "없음",
+                    "change": "-1"
+                },
+                {
+                    "disptitle": "WEST 3F 슈즈",
+                    "ranking": "6",
+                    "brand": "STUART WEITZMAN",
+                    "product": "없음",
+                    "change": "-1"
+                },
+                {
+                    "disptitle": "WEST 3F 슈즈",
+                    "ranking": "7",
+                    "brand": "PATAUGAS",
+                    "product": "없음",
+                    "change": "-1"
+                }
+            ]
+        },
+        {
+            "floor": "4F",
+            "category": "의류",
+            "list": [
+                {
+                    "disptitle": "WEST 4F 의류",
+                    "ranking": "1",
+                    "brand": "RAG & BONE",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 4F 의류",
+                    "ranking": "2",
+                    "brand": "BAND OF OUTSIDERS ",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 4F 의류",
+                    "ranking": "3",
+                    "brand": "ZADIG ET VOLTAIRE",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 4F 의류",
+                    "ranking": "4",
+                    "brand": "COMME DES GARCONS POCKET",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 4F 의류",
+                    "ranking": "5",
+                    "brand": "SYSTEM HOMME",
+                    "product": "없음",
+                    "change": "N"
+                },
+                {
+                    "disptitle": "WEST 4F 의류",
+                    "ranking": "6",
+                    "brand": "SOLID HOMME",
+                    "product": "없음",
+                    "change": "-1"
+                },
+                {
+                    "disptitle": "WEST 4F 의류",
+                    "ranking": "7",
+                    "brand": "A.P.C.",
+                    "product": "없음",
+                    "change": "-1"
+                },
+                {
+                    "disptitle": "WEST 4F 의류",
+                    "ranking": "8",
+                    "brand": "C.K UNDERWEAR",
+                    "product": "없음",
+                    "change": "-1"
+                },
+                {
+                    "disptitle": "WEST 4F 의류",
+                    "ranking": "9",
+                    "brand": "ARMANI UNDERWEAR",
+                    "product": "없음",
+                    "change": "-1"
+                },
+                {
+                    "disptitle": "WEST 4F 의류",
+                    "ranking": "10",
+                    "brand": "SCULP",
+                    "product": "없음",
+                    "change": "-1"
+                }
+            ]
+        },
+        {
+            "floor": "5F",
+            "category": "기프트 멀티",
+            "list": [
+                {
+                    "disptitle": "WEST 5F 기프트 멀티",
+                    "ranking": "1",
+                    "brand": "앙뉴",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 5F 기프트 멀티",
+                    "ranking": "2",
+                    "brand": "Graphic Image",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 5F 기프트 멀티",
+                    "ranking": "3",
+                    "brand": "벤시몽",
+                    "product": "없음",
+                    "change": "0"
+                }
+            ]
+        },
+        {
+            "floor": "5F",
+            "category": "Life 스타일",
+            "list": [
+                {
+                    "disptitle": "WEST 5F Life 스타일",
+                    "ranking": "1",
+                    "brand": "리모와",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 5F Life 스타일",
+                    "ranking": "2",
+                    "brand": "A#",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 5F Life 스타일",
+                    "ranking": "3",
+                    "brand": "삼성",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 5F Life 스타일",
+                    "ranking": "4",
+                    "brand": "매직에디션",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 5F Life 스타일",
+                    "ranking": "5",
+                    "brand": "자카디",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 5F Life 스타일",
+                    "ranking": "6",
+                    "brand": "쁘띠바또",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 5F Life 스타일",
+                    "ranking": "7",
+                    "brand": "더퓨어 부티크",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 5F Life 스타일",
+                    "ranking": "8",
+                    "brand": "렉슨",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 5F Life 스타일",
+                    "ranking": "9",
+                    "brand": "북바인더스디자인",
+                    "product": "없음",
+                    "change": "0"
+                },
+                {
+                    "disptitle": "WEST 5F Life 스타일",
+                    "ranking": "10",
+                    "brand": "트리시아",
+                    "product": "없음",
+                    "change": "N"
+                }
+            ]
+        }
+    ]
+}
