@@ -13,6 +13,7 @@ include $compath.'backup.php';
 ini_set('display_errors','off');
 $manpage = isset($_GET['manpage']) ? $_GET['manpage'] : '';
 
+set_time_limit(0);
 $ok = Backup($backup_dir, $web_dir, $db_dir, $db_ip, $db_port, $db_user, $db_pwd, $db_name);
 
 if (strlen($manpage) > 0) {

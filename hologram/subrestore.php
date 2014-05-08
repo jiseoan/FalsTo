@@ -17,11 +17,12 @@ $ok = false;
 
 if (count($del) > 0) {
 	$dbEnv = "-P ".$db_port." -h ".$db_ip." -u".$db_user." -p".$db_pwd;
-	$srczip = $backup_dir."/src.zip";
-	$sql = $backup_dir."/".$db_name.".sql";
+	$srczip = $backup_dir."/".$del[0]."/src.zip";
+	$sql = $backup_dir."/".$del[0]."/".$db_name.".sql";
 
 	$ok = true;
 
+	set_time_limit(0);
 	if (is_file($srczip)) {
 		$webdirtmp = $web_dir."2";
 		rename($web_dir, $webdirtmp);
