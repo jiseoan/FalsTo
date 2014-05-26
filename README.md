@@ -1,8 +1,7 @@
 Welcome to FalsTo!
 -------------------
 
-This is an early version of FalsTo, a code editor for HTML, CSS, PHP
-and JavaScript that's *built* in HTML, CSS, PHP and JavaScript. 
+This is an early version of FalsTo, a Server-System for internet of Everythings that's *built* in HTML, CSS, PHP and JavaScript. 
 
 What makes FalsTo different from other Server-System?
 
