@@ -9,15 +9,25 @@ session_start();
 <?php include './common/db.php'; ?>
 <?php include './common/brand.php'; ?>
 <?php include './common/mainslide.php'; ?>
+<?php include './common/gourmetslide.php'; ?>
 <?php include './common/shoppinginfo.php'; ?>
+<?php include './common/tastychart.php'; ?>
+<?php include './common/onlygalleria.php'; ?>
+<?php include './common/foodmenu.php'; ?>
 <?php
 
 $ok = $db->open();
 if ($ok) {
-	$brandstr = getBrandJsondata("", $db);
-	$shoppinginfo = getShoppingInfoJsondata("", $db);
+	$brandstr = getBrandJsondata("", false, $db);
+	$shoppinginfo = getShoppingInfoJsondata("", false, $db);
 
-	$mainslide = getMainSlideJsondata("images/dynamic/mainslide/", $db);
+	$mainslide = getMainSlideJsondata("images/dynamic/mainslide/", false, $db);
+	$gourmetslide = getGourmetSlideJsondata("images/dynamic/gourmet/mainslide/", false, $db);
+
+	$tastychart = getTastyChartJsondata("", false, $db);
+	$onlygalleria = getOnlyGelleriaJsondata("", false, $db);
+	$foodmenu = getFoodMenuJsondata("", false, $db);
+
 	$arrimg = filesInDir('images');
 
 	date_default_timezone_set('Asia/Seoul');
@@ -34,6 +44,10 @@ if ($ok) {
 		$zip->addFromString('json/brand.json', $brandstr);
 		$zip->addFromString('json/shopping_info.json', $shoppinginfo);
 		$zip->addFromString('json/main_slide.json', $mainslide);
+		$zip->addFromString('json/gourmet_slide.json', $gourmetslide);
+		$zip->addFromString('json/tasty_chart.json', $tastychart);
+		$zip->addFromString('json/only_galleria.json', $onlygalleria);
+		$zip->addFromString('json/foodmenu.json', $foodmenu);
 		$zip->close();
 		
 		$name = "새업데이트";

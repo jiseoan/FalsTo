@@ -6,7 +6,7 @@ $outstr = "";
 
 $ok = $db->open();
 if ($ok) {
-  $outstr = getMainSlideJsondata($baseimgpath, $db);
+  $outstr = getMainSlideJsondata($baseimgpath, true, $db);
   $db->close();
 }
 

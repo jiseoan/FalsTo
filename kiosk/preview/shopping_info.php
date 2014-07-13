@@ -6,7 +6,7 @@ $outstr = "";
 
 $ok = $db->open();
 if ($ok) {
-  $outstr = getShoppingInfoJsondata($base_URL, $db);
+  $outstr = getShoppingInfoJsondata($base_URL, true, $db);
   $db->close();
 }
 

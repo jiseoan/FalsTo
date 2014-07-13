@@ -6,7 +6,7 @@ $outstr = "";
 
 $ok = $db->open();
 if ($ok) {
-  $outstr = getBrandJsondata($base_URL, $db);
+  $outstr = getBrandJsondata($base_URL, true, $db);
   $db->close();
 }
 

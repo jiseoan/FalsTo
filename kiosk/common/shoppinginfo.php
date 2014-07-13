@@ -1,7 +1,7 @@
 <?php
-function getShoppingInfoJsondata($base_URL, $db) {
+function getShoppingInfoJsondata($base_URL, $urlenc, $db) {
 	$infos = array();
-  $str = "select idshopinfo, tmpltype, postbegin, postend, thumbnail from t_shoppinginfo order by seqno, idshopinfo desc, postbegin desc, postend desc";
+  $str = "select idshopinfo, tmpltype, site, postbegin, postend, thumbnail from t_shoppinginfo order by seqno, idshopinfo desc, postbegin desc, postend desc";
 	$n = $db->querySelect($str);
     
 	for ($i = 0 ; $i < $n ; $i++) {
@@ -9,9 +9,10 @@ function getShoppingInfoJsondata($base_URL, $db) {
 		$infos[$i] = array();
 		$infos[$i]['idshopinfo'] = $row['idshopinfo'];
 		$infos[$i]['template-type'] = $row['tmpltype'];
+		$infos[$i]['site'] = $row['site'];
 		$infos[$i]['post-begin'] = $row['postbegin'];
 		$infos[$i]['post-end'] = $row['postend'];
-		$infos[$i]['thumbnail'] = $base_URL.$row['thumbnail'];
+		$infos[$i]['thumbnail'] = $base_URL.($urlenc ? dirname($row['thumbnail'])."/".urlencode(basename($row['thumbnail'])) : $row['thumbnail']);
 	}
 	$db->free();
   
@@ -54,7 +55,7 @@ function getShoppingInfoJsondata($base_URL, $db) {
 		  for ($k = 0, $l = 0 ; $k < $m ; $k++) {
 			  $row = $db->goNext();
         if (strlen($row['path']) > 0) {
-          $imgarr[$l++] = $base_URL.$row['path'];
+          $imgarr[$l++] = $base_URL.($urlenc ? dirname($row['path'])."/".urlencode(basename($row['path'])) : $row['path']);
         }
 		  }
 		  $db->free();
@@ -75,7 +76,7 @@ function getShoppingInfoJsondata($base_URL, $db) {
       $nmlang = $lang[$j % 4];
       
       if (strlen($row['path']) > 0) {
-        $infos[$i][$nmimg][$nmlang] = $base_URL.$row['path'];
+        $infos[$i][$nmimg][$nmlang] = $base_URL.($urlenc ? dirname($row['path'])."/".urlencode(basename($row['path'])) : $row['path']);
       }
       else {
         $infos[$i][$nmimg][$nmlang] = "";
