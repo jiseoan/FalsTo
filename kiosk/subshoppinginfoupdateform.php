@@ -17,6 +17,7 @@ $idlangs = null;
 $nmlangs = null;
 $idshopinfo = $del[0];
 $tmpltype = 1;
+$site = 1;
 $yearfrom = 0;
 $monthfrom = 0;
 $dayfrom = 0;
@@ -49,11 +50,12 @@ if ($ok) {
 	$str = "SELECT name FROM t_lang order by idlang;";
 	$nmlangs = $db->getSingleList($str, "name");
 
-	$str = "SELECT tmpltype, postbegin, postend, thumbnail FROM t_shoppinginfo where idshopinfo = ".$idshopinfo.";";
+	$str = "SELECT tmpltype, site, postbegin, postend, thumbnail FROM t_shoppinginfo where idshopinfo = ".$idshopinfo.";";
 	$n = $db->querySelect($str);
 	if ($n == 1) {
 		$row = $db->goNext();
 		$tmpltype = $row['tmpltype'];
+		$site = $row['site'];
 		$postbegin = $row['postbegin'];
 		$postend = $row['postend'];
 		$thumbnail = $row['thumbnail'];
@@ -148,7 +150,7 @@ for ($i = 0 ; $i < $nidlangs ; $i++) {
 </tr>
 <tr style="height:42px;">
 <td style="width:145px; text-align:center;" class="td1">템플릿종류</td>
-<td colspan="4" style="width:945px; text-align:left; padding-left:3px;" class="td2">TYPE<? echo $tmpltype; ?><input type="hidden" name="tmpltype" value="<? echo $tmpltype; ?>"/></td>
+<td colspan="4" style="width:945px; text-align:left; padding-left:3px;" class="td2">TYPE<? echo $tmpltype; ?><input type="hidden" name="tmpltype" value="<? echo $tmpltype; ?>"/>&nbsp;&nbsp;&nbsp;<? echo ($site == 1) ? "명품관" : "GOURMET494" ?></td>
 </tr>
 <tr style="height:42px;">
 <td style="width:145px; text-align:center;" class="td1">게시 시작</td>

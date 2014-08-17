@@ -119,6 +119,9 @@ for ($i = 0 ; $i < $nidlangs ; $i++) {
 <option value="0" selected>TYPE0 (이미지1개)</option>
 <option value="1">TYPE1 (이미지1개)</option>
 <option value="2">TYPE2 (이미지6개)</option>
+</select>&nbsp;&nbsp;&nbsp;<select style="width:200px;" name="site">
+<option value="1" selected>명품관</option>
+<option value="2">GOURMET494</option>
 </select></td>
 </tr>
 <tr style="height:42px;">

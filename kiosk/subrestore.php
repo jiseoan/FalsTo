@@ -19,6 +19,14 @@ if (count($del) > 0) {
 
 	$ok = true;
 
+	set_time_limit(0);
+
+	if (is_file($sql)) {
+		chdir($db_dir);
+		$result = passthru("mysqladmin ".$dbEnv." -f drop ".$db_name, $retval);
+		$result = passthru("mysql ".$dbEnv." < ".$sql, $retval);
+	}
+
 	if (is_file($srczip)) {
 		$webdirtmp = $web_dir."2";
 		rename($web_dir, $webdirtmp);
@@ -32,12 +40,6 @@ if (count($del) > 0) {
 			$ok = false;
 			rename($webdirtmp, $web_dir);
 		}
-	}
-
-	if (is_file($sql)) {
-		chdir($db_dir);
-		$result = passthru("mysqladmin ".$dbEnv." -f drop ".$db_name, $retval);
-		$result = passthru("mysql ".$dbEnv." < ".$sql, $retval);
 	}
 }
 ?>

@@ -6,6 +6,22 @@ session_start();
 
 $curpage = isset($_POST["curpage"]) ? intval($_POST["curpage"]) : 1;
 $del2 = $_POST["del"];
+
+$slidername = isset($_GET["name"]) ? $_GET["name"] : (isset($_POST["name"]) ? $_POST["name"] : "");
+
+$baseimgpath = "";
+$tablename = "";
+
+switch ($slidername) {
+	case "gourmet494":
+		$baseimgpath = "./images/dynamic/gourmet/mainslide";
+		$tablename = "t_gourmet494slide";
+		break;
+	default:
+		$baseimgpath = "./images/dynamic/mainslide";
+		$tablename = "t_mainslide";
+		break;
+}
 ?>
 <?php include './common/file.php'; ?>
 <?php
@@ -13,14 +29,16 @@ $del2 = $_POST["del"];
 $ok = true;
 
 for ($i = 0, $n = count($del2) ; $i < $n ; $i++) {
-	fileDelete($del2[$i]);
+	if (file_exists($del2[$i])) {
+		fileDelete($del2[$i]);
+	}
 }
 ?>
 
 <html>
 <body>
 
-<form id="upForm" name="upForm" method="post" action="submainslideman.php">
+<form id="upForm" name="upForm" method="post" action="submainslideman.php?name=<? echo $slidername ?>">
 <input type="hidden" name="curpage" value="<? echo $curpage; ?>" />
 </form>
 <?php

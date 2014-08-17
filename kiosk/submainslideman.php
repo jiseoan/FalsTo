@@ -4,10 +4,24 @@ header("Cache-Control:no-cache");
 header("Pragma:no-cache");
 session_start();
 
-$baseimgpath = "./images/dynamic/mainslide";
+$slidername = isset($_GET["name"]) ? $_GET["name"] : (isset($_POST["name"]) ? $_POST["name"] : "");
+
+$baseimgpath = "";
+$tablename = "";
+
+switch ($slidername) {
+	case "gourmet494":
+		$baseimgpath = "./images/dynamic/gourmet/mainslide";
+		$tablename = "t_gourmet494slide";
+		break;
+	default:
+		$baseimgpath = "./images/dynamic/mainslide";
+		$tablename = "t_mainslide";
+		break;
+}
+
 if (!is_dir($baseimgpath)) {
-	echo "error -> baseimgpath<br/>";
-	exit;
+	mkdir($baseimgpath, 0777);
 }
 
 $arrCtx = array("mssrtattr"=>"name",
@@ -57,23 +71,23 @@ if (!$ok) {
 	exit;
 }
 
-$str = "update t_mainslide set flag = 0;";
+$str = "update ".$tablename." set flag = 0;";
 $db->query($str);
 
 foreach ($imgs as $fpath) {
 	$fname = iconv("euc-kr", "utf-8", substr(strrchr($fpath, '/'), 1));
-	$str = "insert into t_mainslide (name, flag) values ('".$fname."', 1);";
+	$str = "insert into ".$tablename." (name, flag) values ('".$fname."', 1);";
 	if ($db->query($str) <= 0) {
-		$str = "update t_mainslide set flag = 1 where name = '".$fname."';";
+		$str = "update ".$tablename." set flag = 1 where name = '".$fname."';";
 		$db->query($str);
 	}
 }
 
-$str = "delete from t_mainslide where flag = 0;";
+$str = "delete from ".$tablename." where flag = 0;";
 $db->query($str);
 
 $cpimgs = array();
-$str = "SELECT name, seqno FROM t_mainslide order by ".$srtattr[$arrCtx["mssrtattr"]]." ".$arrCtx["mssrtodr"]." limit ".$offset.",".$maxitem.";";
+$str = "SELECT name, seqno FROM ".$tablename." order by ".$srtattr[$arrCtx["mssrtattr"]]." ".$arrCtx["mssrtodr"]." limit ".$offset.",".$maxitem.";";
 $ncpimgs = $db->querySelect($str);
 
 for ($i = 0 ; $i < $ncpimgs ; $i++) {
@@ -99,8 +113,8 @@ $db->close();
 <body style="margin-left:0px; margin-top:0px; font-family: 돋움;">
 
 <image src="./image/add.png" style="position:relative; left:0px; top:15px; width: 49px; height:32px; cursor:pointer;" alt="추가" onclick="addview.style.visibility = 'visible';"/>
-<image src="./image/remove.png" style="position:relative; left:5px; top:15px; width: 49px; height:32px; cursor:pointer;" alt="삭제" onclick="if (testCheckbox('del[]')) { regForm.action='submainslideremove.php'; regForm.submit(); }"/>
-<image src="./image/change.png" style="position:relative; left:10px; top:15px; width: 49px; height:32px; cursor:pointer;" alt="수정" onclick="loadingview.style.visibility = 'visible'; regForm.action='submainslideupdate.php'; regForm.submit();"/>
+<image src="./image/remove.png" style="position:relative; left:5px; top:15px; width: 49px; height:32px; cursor:pointer;" alt="삭제" onclick="if (testCheckbox('del[]')) { regForm.action='submainslideremove.php?name=<? echo $slidername ?>'; regForm.submit(); }"/>
+<image src="./image/change.png" style="position:relative; left:10px; top:15px; width: 49px; height:32px; cursor:pointer;" alt="수정" onclick="loadingview.style.visibility = 'visible'; regForm.action='submainslideupdate.php?name=<? echo $slidername ?>'; regForm.submit();"/>
 
 <form id="regForm" name="regForm" method="post" enctype="multipart/form-data" action="">
 <input type="hidden" name="curpage" value="<? echo $curpage; ?>" />
@@ -122,7 +136,7 @@ else {
 	$odr = "asc";
 	$imghtml = "";
 }
-echo '<th style="width:80px; cursor:pointer;" class="th2" onclick="document.location = \'submainslideman.php?mssrtattr=seqno&mssrtodr='.$odr.'\';">순서'.$imghtml.'</th>';
+echo '<th style="width:80px; cursor:pointer;" class="th2" onclick="document.location = \'submainslideman.php?name='.$slidername.'&mssrtattr=seqno&mssrtodr='.$odr.'\';">순서'.$imghtml.'</th>';
 
 if ($arrCtx['mssrtattr'] == "name") {
 	if ($arrCtx['mssrtodr'] == "asc") {
@@ -138,7 +152,7 @@ else {
 	$odr = "asc";
 	$imghtml = "";
 }
-echo '<th style="width:820px; cursor:pointer;" class="th2" onclick="document.location = \'submainslideman.php?mssrtattr=name&mssrtodr='.$odr.'\';">이미지'.$imghtml.'</th>';
+echo '<th style="width:820px; cursor:pointer;" class="th2" onclick="document.location = \'submainslideman.php?name='.$slidername.'&mssrtattr=name&mssrtodr='.$odr.'\';">이미지'.$imghtml.'</th>';
 ?>
 </tr>
 <?php
@@ -163,7 +177,7 @@ for ($i = 0 ; $i < $ncpimgs ; $i++) {
 <image src="./image/add.png" style="position:relative; left:0px; top:15px; width: 49px; height:32px; cursor:pointer;" alt="추가" onclick="if (addForm.file.value.length < 1) alert('파일을 선택하세요.'); else { loadingview.style.visibility = 'visible'; addForm.submit(); }"/>
 <image src="./image/cancel.png" style="position:relative; left:0px; top:15px; width: 49px; height:32px; cursor:pointer;" alt="취소" onclick="addview.style.visibility = 'hidden';"/>
 
-<form id="addForm" name="addForm" method="post" enctype="multipart/form-data" action="submainslideadd.php">
+<form id="addForm" name="addForm" method="post" enctype="multipart/form-data" action="submainslideadd.php?name=<? echo $slidername ?>">
 <input type="hidden" name="curpage" value="<? echo $curpage; ?>" />
 <input type="hidden" name="baseimgpath" value="<? echo $baseimgpath; ?>" />
 <input type="file" name="file" style="position:relative; left:0px; top:30px; width:100%; border-style:none;"/>

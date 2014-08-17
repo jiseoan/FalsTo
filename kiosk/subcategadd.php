@@ -12,7 +12,7 @@ $curpage = isset($_POST["curpage"]) ? intval($_POST["curpage"]) : 1;
 $ok = $db->open();
 
 if ($ok) {
-  $str = "SELECT ifnull(max(idgrp), 0) as maxid FROM t_grp where idgrpcateg = 1;";
+  $str = "SELECT ifnull(max(idgrp), 0) as maxid FROM t_grp;";
 	$maxid = $db->queryCount($str, "maxid");
 
 	if ($maxid == null) {

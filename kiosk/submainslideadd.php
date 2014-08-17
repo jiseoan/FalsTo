@@ -5,12 +5,27 @@ header("Pragma:no-cache");
 session_start();
 
 $curpage = isset($_POST["curpage"]) ? intval($_POST["curpage"]) : 1;
-$baseimgpath = "./images/dynamic/mainslide/";
+$slidername = isset($_GET["name"]) ? $_GET["name"] : (isset($_POST["name"]) ? $_POST["name"] : "");
+
+$baseimgpath = "";
+$tablename = "";
+
+switch ($slidername) {
+	case "gourmet494":
+		$baseimgpath = "./images/dynamic/gourmet/mainslide";
+		$tablename = "t_gourmet494slide";
+		break;
+	default:
+		$baseimgpath = "./images/dynamic/mainslide";
+		$tablename = "t_mainslide";
+		break;
+}
 ?>
 <?php include './common/file.php'; ?>
 <?
 ?>
 <?php
+$baseimgpath .= "/";
 $ok = ($_FILES["file"]["error"] == 0);
 
 if ($ok) {
@@ -23,7 +38,7 @@ if ($ok) {
 <html>
 <body>
 
-<form id="upForm" name="upForm" method="post" action="submainslideman.php">
+<form id="upForm" name="upForm" method="post" action="submainslideman.php?name=<? echo $slidername ?>">
 <input type="hidden" name="curpage" value="<? echo $curpage; ?>" />
 </form>
 <?php

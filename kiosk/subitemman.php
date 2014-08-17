@@ -30,6 +30,7 @@ $curpage = isset($_POST["curpage"]) ? intval($_POST["curpage"]) : 1;
 $ok = $db->open();
 
 $dftLang = 1;	// 한국어
+$idgrpcateg = 1;	// 브랜드분류
 $maxitem = 10;
 $niditems = 0;
 $items = array();
@@ -43,7 +44,7 @@ if ($curpage <= 0) {
 }
 
 if ($ok) {
-	$str = "SELECT distinct i.iditem FROM t_item as i left join t_grp as g on (i.idgrp = g.idgrp and g.idlang = ".$dftLang.") inner join t_itemext as a on (i.iditem = a.iditem and idattr = 'name')";
+	$str = "SELECT distinct i.iditem FROM t_item as i inner join t_grp as g on (g.idgrpcateg = ".$idgrpcateg." and i.idgrp = g.idgrp and g.idlang = ".$dftLang.") inner join t_itemext as a on (i.iditem = a.iditem and idattr = 'name')";
 	if (strlen($arrCtx["br_kwrd"]) > 0) {
 		$str .= " where attrval like '%".$arrCtx["br_kwrd"]."%' or tag like '%".$arrCtx["br_kwrd"]."%' or phone like '%".$arrCtx["br_kwrd"]."%' or hall = '".$arrCtx["br_kwrd"]."' or floor = '".$arrCtx["br_kwrd"]."'";
 	}

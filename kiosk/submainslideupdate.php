@@ -7,6 +7,22 @@ session_start();
 $curpage = isset($_POST["curpage"]) ? intval($_POST["curpage"]) : 1;
 $orgpath = $_POST["orgpath"];
 $seqno = $_POST["seqno"];
+
+$slidername = isset($_GET["name"]) ? $_GET["name"] : (isset($_POST["name"]) ? $_POST["name"] : "");
+
+$baseimgpath = "";
+$tablename = "";
+
+switch ($slidername) {
+	case "gourmet494":
+		$baseimgpath = "./images/dynamic/gourmet/mainslide";
+		$tablename = "t_gourmet494slide";
+		break;
+	default:
+		$baseimgpath = "./images/dynamic/mainslide";
+		$tablename = "t_mainslide";
+		break;
+}
 ?>
 <?php include './common/file.php'; ?>
 <?php include './common/db.php'; ?>
@@ -28,7 +44,7 @@ if ($ok) {
 
 		// 순번처리
 		$fname = substr(strrchr($orgpath[$i], '/'), 1);
-		$str = "update t_mainslide set seqno = ".$seqno[$i]." where name = '".$fname."';";
+		$str = "update ".$tablename." set seqno = ".$seqno[$i]." where name = '".$fname."';";
 		$db->query($str);
 	}
 
@@ -38,7 +54,7 @@ if ($ok) {
 
 <html>
 <body>
-<form id="upForm" name="upForm" method="post" action="submainslideman.php">
+<form id="upForm" name="upForm" method="post" action="submainslideman.php?name=<? echo $slidername ?>">
 <input type="hidden" name="curpage" value="<? echo $curpage; ?>" />
 </form>
 <?php

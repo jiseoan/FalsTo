@@ -6,6 +6,7 @@ session_start();
 
 $infospath = "images/dynamic/infos";
 $tmpltype = (int)$_POST["tmpltype"];
+$site = (int)$_POST["site"];
 $yearfrom = $_POST["yearfrom"];
 $monthfrom = $_POST["monthfrom"];
 $dayfrom = $_POST["dayfrom"];
@@ -59,7 +60,7 @@ if ($ok) {
   
   $postbegin = $yearfrom."-".$monthfrom."-".$dayfrom." ".$hourfrom."-".$minutefrom;
   $postend = $yearto."-".$monthto."-".$dayto." ".$hourto."-".$minuteto;
-	$str = "INSERT INTO t_shoppinginfo (tmpltype, postbegin, postend, thumbnail) VALUES (".$tmpltype.", '".$postbegin."', '".$postend."', '".$thumbnail."');";
+	$str = "INSERT INTO t_shoppinginfo (tmpltype, site, postbegin, postend, thumbnail) VALUES (".$tmpltype.", ".$site.", '".$postbegin."', '".$postend."', '".$thumbnail."');";
   $db->autocommit(false);
   if ($db->query($str) == 0) {
 		$ok = false;

@@ -34,7 +34,7 @@ if ($ok) {
 	$str = "SELECT name FROM t_lang order by idlang;";
 	$nmlangs = $db->getSingleList($str, "name");
 
-	$str = "SELECT distinct idgrp FROM t_grp where idgrpcateg = 1 order by idgrp;";
+	$str = "SELECT distinct idgrp FROM t_grp where idgrpcateg = 1 order by seq;";
 	$idgrps = $db->getSingleList($str, "idgrp");
 	$nidgrps = count($idgrps);
 	$nallitems = $nidgrps;

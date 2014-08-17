@@ -102,7 +102,14 @@ function uploadfileMove($prefix, $fname, $tmpname) {
 }
 
 function fileDelete($path) {
-  $path2 = iconv("utf-8", "euc-kr", $path);
-  unlink($path2);
+	if (is_file($path)) {
+		unlink($path);
+	}
+	else {
+		$path = iconv("utf-8", "euc-kr", $path);
+		if (is_file($path)) {
+			unlink($path);
+		}
+	}
 }
 ?>

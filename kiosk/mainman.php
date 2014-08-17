@@ -29,7 +29,7 @@ $menuitem = 1;
     </div> <!-- <div class="menu-bar"> -->
 
     <div class="contents">
-        <div class="contents-inner" style="height: 4030px;">
+        <div class="contents-inner" style="height: 7350px;">
 		<!-- 내용-시작 -->
 
 
@@ -45,25 +45,44 @@ $menuitem = 1;
 <iframe style="position:relative; left:0px; top:60px; width: 945px; height:790px;" src="submainslideman.php" frameborder="0" scrolling="no"></iframe>
 
 <div style="position:relative; left:0px; top:90px; width: 945px; height:44px; background-image: url(./image/subtitlebg.png); background-repeat: no-repeat;">
-<label class="sub-title" style="position:absolute;left:32px; top:15px;" class="subtitle">브랜드관리</label>
+<label class="sub-title" style="position:absolute;left:32px; top:15px;" class="subtitle">슬라이드관리-GOURMET494</label>
 </div>
-<iframe style="position:relative; left:0px; top:90px; width: 945px; height:800px;" src="subitemman.php" frameborder="0" scrolling="no"></iframe>
+<iframe style="position:relative; left:0px; top:90px; width: 945px; height:790px;" src="submainslideman.php?name=gourmet494" frameborder="0" scrolling="no"></iframe>
 
 <div style="position:relative; left:0px; top:120px; width: 945px; height:44px; background-image: url(./image/subtitlebg.png); background-repeat: no-repeat;">
-<label class="sub-title" style="position:absolute;left:32px; top:15px;" class="subtitle">쇼핑정보관리</label>
+<label class="sub-title" style="position:absolute;left:32px; top:15px;" class="subtitle">브랜드관리</label>
 </div>
-<iframe style="position:relative; left:0px; top:120px; width: 945px; height:800px;" src="subshoppinginfoman.php" frameborder="0" scrolling="no"></iframe>
+<iframe style="position:relative; left:0px; top:120px; width: 945px; height:800px;" src="subitemman.php" frameborder="0" scrolling="no"></iframe>
 
 <div style="position:relative; left:0px; top:150px; width: 945px; height:44px; background-image: url(./image/subtitlebg.png); background-repeat: no-repeat;">
-<label class="sub-title" style="position:absolute;left:32px; top:15px;" class="subtitle">UI관리</label>
+<label class="sub-title" style="position:absolute;left:32px; top:15px;" class="subtitle">FOOD MENU 관리</label>
 </div>
-<iframe style="position:relative; left:0px; top:150px; width: 945px; height:790px;" src="subimagesman.php?path=static&add=no&del=no&dir=yes" frameborder="0" scrolling="no"></iframe>
+<iframe style="position:relative; left:0px; top:150px; width: 945px; height:800px;" src="subfoodmenuman.php" frameborder="0" scrolling="no"></iframe>
+
+<div style="position:relative; left:0px; top:180px; width: 945px; height:44px; background-image: url(./image/subtitlebg.png); background-repeat: no-repeat;">
+<label class="sub-title" style="position:absolute;left:32px; top:15px;" class="subtitle">쇼핑정보관리</label>
+</div>
+<iframe style="position:relative; left:0px; top:180px; width: 945px; height:800px;" src="subshoppinginfoman.php" frameborder="0" scrolling="no"></iframe>
 
 <div style="position:relative; left:0px; top:210px; width: 945px; height:44px; background-image: url(./image/subtitlebg.png); background-repeat: no-repeat;">
+<label class="sub-title" style="position:absolute;left:32px; top:15px;" class="subtitle">TASTY CHART 관리</label>
+</div>
+<iframe style="position:relative; left:0px; top:210px; width: 945px; height:800px;" src="subtastychartman.php" frameborder="0" scrolling="auto"></iframe>
+
+<div style="position:relative; left:0px; top:240px; width: 945px; height:44px; background-image: url(./image/subtitlebg.png); background-repeat: no-repeat;">
+<label class="sub-title" style="position:absolute;left:32px; top:15px;" class="subtitle">Only Galleria 관리</label>
+</div>
+<iframe style="position:relative; left:0px; top:240px; width: 945px; height:650px;" src="subonlygalleriaman.php" frameborder="0" scrolling="no"></iframe>
+
+<div style="position:relative; left:0px; top:270px; width: 945px; height:44px; background-image: url(./image/subtitlebg.png); background-repeat: no-repeat;">
+<label class="sub-title" style="position:absolute;left:32px; top:15px;" class="subtitle">UI관리</label>
+</div>
+<iframe style="position:relative; left:0px; top:270px; width: 945px; height:790px;" src="subimagesman.php?path=static&add=no&del=no&dir=yes" frameborder="0" scrolling="no"></iframe>
+
+<div style="position:relative; left:0px; top:300px; width: 945px; height:44px; background-image: url(./image/subtitlebg.png); background-repeat: no-repeat;">
 <label class="sub-title" style="position:absolute;left:32px; top:15px;" class="subtitle">카테고리관리</label>
 </div>
-<iframe style="position:relative; left:0px; top:210px; width: 945px; height:380px;" src="subcategman.php" frameborder="0" scrolling="no"></iframe>
-
+<iframe style="position:relative; left:0px; top:300px; width: 945px; height:380px;" src="subcategman.php" frameborder="0" scrolling="no"></iframe>
 
 		<!-- 내용-끝 -->
        </div> <!-- <div class="contents-inner"> -->
