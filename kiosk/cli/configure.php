@@ -1,4 +1,4 @@
-<?php include '../common/db.php'; ?>
+﻿<?php include '../common/db.php'; ?>
 <?PHP
 function GetConfigureJson($db, $cliname, $pos) {
 	$str = "SELECT scrsaverintv, updateintv, rollheader, rollimgslider, rollshopinfoticker, rollranking FROM t_operating where enable = 'Y' order by idoperating desc limit 0, 1;";

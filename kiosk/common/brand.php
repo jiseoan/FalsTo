@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 function getBrandJsondata($base_URL, $urlenc, $db) {
   $dftLang = 1;	// 한국어
   $idgrpcateg = 1;	// 브랜드분류

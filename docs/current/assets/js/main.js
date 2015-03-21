@@ -1,4 +1,4 @@
-$(function () {
+﻿$(function () {
     $(".show-code").click(function () {
         var block = $(this).parent().find('pre[class*="language-"]');
         block.toggle();

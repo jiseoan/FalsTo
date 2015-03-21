@@ -1,4 +1,4 @@
-<?php include '../common/db.php'; ?>
+﻿<?php include '../common/db.php'; ?>
 <?PHP
 header("Content-Type:text/plain; charset=UTF-8"); 
 header("Cache-Control:no-cache");

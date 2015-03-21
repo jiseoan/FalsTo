@@ -1,11 +1,8 @@
-<?PHP
+﻿<?PHP
 header("Content-Type:text/html; charset=UTF-8"); 
 header("Cache-Control:no-cache");
 header("Pragma:no-cache");
 session_start();
-
-$langRes = $_SESSION['langRes'][basename(__FILE__, ".php")];
-$manLangCode = $_SESSION['manLangCode'];
 
 $curpage = isset($_POST["curpage"]) ? intval($_POST["curpage"]) : 1;
 $del = $_POST["del"];
@@ -22,7 +19,6 @@ if (count($del) > 0) {
 
 	$ok = true;
 
-	set_time_limit(0);
 	if (is_file($srczip)) {
 		$webdirtmp = $web_dir."2";
 		rename($web_dir, $webdirtmp);
@@ -54,7 +50,7 @@ if (count($del) > 0) {
 <?php
 echo "<script>";
 if (!$ok) {
-	echo "alert('".$langRes["message"][0][$manLangCode]."');";
+	echo "alert('복원하지 못하였습니다');";
 }
 echo "upForm.submit();";
 echo "</script>";

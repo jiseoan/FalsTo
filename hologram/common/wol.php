@@ -1,4 +1,4 @@
-<?php include 'env.php'; ?>
+﻿<?php include 'env.php'; ?>
 <?php
 class WOL {
   var $broadcast;

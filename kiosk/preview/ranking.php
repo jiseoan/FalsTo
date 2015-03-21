@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $fd = fopen("../json/ranking.json", "r");
 if ($fd){
   while (!feof($fd)) {

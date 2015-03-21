@@ -1,5 +1,5 @@
-<?PHP
-/* °¶·¯¸®¾Æ¼­¹ö 
+ï»¿<?PHP
+/* åª›ã…»ìœ­ç”±ÑŠë¸˜?ì’•ì¾­ 
 $db_ip = "127.0.0.1";
 $db_port = "3306";
 $db_user = "root";
@@ -12,7 +12,7 @@ $backup_dir = "d:/backup/kiosk";
 
 $localnetwork = "192.168.0";
 */
-/* Å×½ºÆ®¼­¹ö 
+/* ?ëš¯ë’ª?ëª„ê½Œè¸°? */
 $db_ip = "127.0.0.1";
 $db_port = "3306";
 $db_user = "root";
@@ -22,19 +22,6 @@ $db_name = "kioskdb";
 $db_dir = "/usr/bin/";
 $web_dir = "/var/www/html/kiosk";
 $backup_dir = "/home/jman/backup/kiosk";
-
-$localnetwork = "192.168.0";
-*/
-/* °³¹ßPC */
-$db_ip = "127.0.0.1";
-$db_port = "3306";
-$db_user = "falsto";
-$db_pwd = "whdythelqlpwd";
-$db_name = "kioskdb";
-
-$db_dir = "D:/Documents\Program/xampp-1.8.2-5/mysql/bin";
-$web_dir = "D:/Documents/GitHub/FalsTo/kiosk";
-$backup_dir = "D:/Downloads/backup/kiosk";
 
 $localnetwork = "192.168.0";
 ?>

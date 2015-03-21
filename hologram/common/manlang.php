@@ -1,4 +1,4 @@
-<?
+﻿<?
 function loadLangRes() {
   $fd = fopen("res/manlang.json", "r");
   if (!$fd) {

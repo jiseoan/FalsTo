@@ -1,4 +1,4 @@
-<?php include '../common/db.php'; ?>
+﻿<?php include '../common/db.php'; ?>
 <?php include '../common/tastychart.php'; ?>
 <?php
 $baseimgpath = "/kiosk/";

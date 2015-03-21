@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 function getJsondata($isWeb, $db) {
   $nameLangID = 2;
   $base_URL = $isWeb ? "/hologram/" : "./";

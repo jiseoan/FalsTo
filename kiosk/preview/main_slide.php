@@ -1,4 +1,4 @@
-<?php include '../common/db.php'; ?>
+﻿<?php include '../common/db.php'; ?>
 <?php include '../common/mainslide.php'; ?>
 <?php
 $baseimgpath = "/kiosk/images/dynamic/mainslide/";

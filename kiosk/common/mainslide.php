@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 function getMainSlideJsondata($base_URL, $urlenc, $db) {
 	$imgs = array();
   $str = "select name from t_mainslide order by seqno, name";

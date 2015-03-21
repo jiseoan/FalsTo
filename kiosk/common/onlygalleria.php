@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 function getOnlyGelleriaJsondata($base_URL, $urlenc, $db) {
   $lang = array("kor", "eng", "jpn", "chn");
   $items = array();

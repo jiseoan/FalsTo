@@ -1,4 +1,4 @@
-/*
+﻿/*
  * 
  */
 function selectionSync(obj) {

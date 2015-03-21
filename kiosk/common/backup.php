@@ -1,4 +1,4 @@
-<?php include 'env.php'; ?>
+﻿<?php include 'env.php'; ?>
 <?php include 'file.php'; ?>
 <?php
 function Backup($backup_dir, $web_dir, $db_dir, $db_ip, $db_port, $db_user, $db_pwd, $db_name) {

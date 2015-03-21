@@ -1,4 +1,4 @@
-<?PHP
+﻿<?PHP
 $rankingoutfile = "../json/ranking.json";
 $appid = isset($_POST["appid"]) ? $_POST["appid"] : '';
 

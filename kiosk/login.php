@@ -1,4 +1,4 @@
-<?PHP
+﻿<?PHP
 header("Content-Type:text/html; charset=UTF-8"); 
 header("Cache-Control:no-cache");
 header("Pragma:no-cache");
@@ -20,7 +20,7 @@ if ($ok) {
 		$_SESSION['userid'] = $userid;
 	}
 	else {
-		$str = "select count(*) as cnt from t_admin where idadmin = '".$userid."';";
+		$str = "select count(*) as cnt from t_admin where idadmin = '".$userid."');";
 		$n = $db->queryCount($str, "cnt");
 		if ($n > 0) {
 			$msg = "비밀번호를 확인하세요.";

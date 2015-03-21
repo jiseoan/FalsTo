@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $compath = '/common/';
 if (isset($_SERVER["DOCUMENT_ROOT"]) && strlen($_SERVER["DOCUMENT_ROOT"]) > 0) {
   $compath = '..'.$compath;

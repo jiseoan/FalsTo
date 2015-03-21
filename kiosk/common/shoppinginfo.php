@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 function getShoppingInfoJsondata($base_URL, $urlenc, $db) {
 	$infos = array();
   $str = "select idshopinfo, tmpltype, site, postbegin, postend, thumbnail from t_shoppinginfo order by seqno, idshopinfo desc, postbegin desc, postend desc";

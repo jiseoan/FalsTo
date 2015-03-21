@@ -1,4 +1,4 @@
-<?PHP
+﻿<?PHP
 header("Content-Type:text/html; charset=UTF-8"); 
 header("Cache-Control:no-cache");
 header("Pragma:no-cache");
@@ -25,8 +25,8 @@ if ($ok) {
 	$yearbegin = 2012;
 	$monthbegin = 10;
 	
-	for ($i = $yearbegin ; $i <= $year ; $i++) {
-		for ($j = $monthbegin ; ($i < $year && $j <= 12) || ($i == $year && $j < $month) ; $j++) {
+	for ($i = $yearbegin, $j = $monthbegin ; $i <= $year ; $i++, $j = 1) {
+		for ( ; ($i < $year && $j <= 12) || ($i == $year && $j < $month) ; $j++) {
 			for ($k = 1 ; $k < 5 ; $k++) {
 				$str = "INSERT INTO t_tastychart (year, month, idlang, pathimage) VALUES (".$i.", ".$j.", ".$k.", '');";
 				$db->query($str);

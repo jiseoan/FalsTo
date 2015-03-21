@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 function getFoodMenuJsondata($base_URL, $urlenc, $db) {
 	$items = array();
   

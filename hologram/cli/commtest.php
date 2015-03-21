@@ -1,3 +1,3 @@
-<?PHP
+﻿<?PHP
 echo 'OK';
 ?>

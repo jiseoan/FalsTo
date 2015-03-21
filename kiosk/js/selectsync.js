@@ -1,4 +1,4 @@
-/*
+ï»¿/*
  * 
  */
 function selectionSync(obj) {
@@ -40,7 +40,7 @@ function templateTypeSelect(obj) {
             descetc = true;
             break;
         default:
-            alert('ÁöÁ¤µÈ Å¸ÀÔÀÌ ¾Æ´Õ´Ï´Ù.');
+            alert('ì§€ì •ëœ íƒ€ì…ì´ ì•„ë‹™ë‹ˆë‹¤.');
             return;
     }
 

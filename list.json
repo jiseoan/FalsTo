@@ -1,0 +1,127 @@
+{
+	"language": [
+			{ 
+				"name": "Korean",
+				"order": [ "ㄱ", "ㄴ", "ㄷ", "ㄹ", "ㅁ", "ㅂ", "ㅅ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ" ],
+				"image": "http://115.68.23.109/hologram/image/korean_button.png"
+			},
+			{
+				"name": "English",
+				"order": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" ],
+				"image": "http://115.68.23.109/hologram/image/english_button.png"
+			}
+	],
+	"group" : [
+	 	{
+	 		"name" : "Korean",
+	 		"order": [ "삼국시대", "신라시대", "고려시대", "조선시대" ]
+	 	},
+	 	{
+	 		"name": "English",
+	 		"order": ["Samkuk", "Shinla", "Korea", "Chosun" ]
+	 	}
+	 ],
+
+	"itemlist": [
+		{
+			"name": "crown",
+			"model": "http://115.68.23.109/hologram/model/crown.unity3d",
+			"desc": [
+				{
+					"language": "Korean",
+					"name": "비싼왕관",
+					"order": "ㅇ",
+					"group": "신라시대",
+					"list": {
+						"image": "http://115.68.23.109/hologram/image/crown.png",
+						"이름": "비싼 왕관",
+						"소장기관": "국립중앙박물관",
+						"지정구분": "국보 xx호"
+					},
+					"detail": {
+						"image": "http://115.68.23.109/hologram/image/crown_detail.png",
+						"feature": "생동감 있는 표현 \n입가에 머금은 생기있는 미소\n살아 숨쉬는 듯한 얼굴 표정",
+						"국적/시대": "한국- 신라시대 xx",
+						"재질": "금속",
+						"크기": "높이 xxcm",
+						"소장기관": "국립중앙박물관",
+						"지정구분": " 국보 xx호",
+						"유물번호": "덕수 - 00000-000"
+					}
+				},
+				{
+					"language": "English",
+					"name": "Crown",
+					"order": "c",
+					"group": "Shinla",
+					"list": {
+						"image": "http://115.68.23.109/hologram/image/crown.png",
+						"이름": "crown",
+						"소장기관": "Museum",
+						"지정구분": "...."
+					},
+					"detail": {
+						"image": "http://115.68.23.109/hologram/image/crown_detail.png",
+						"feature": "crown crwon crwon crwon",
+						"국적/시대": "Shinla xx",
+						"재질": "Gold",
+						"크기": "Height xxcm",
+						"소장기관": "Museum",
+						"지정구분": " ....",
+						"유물번호": "... - 00000-000"
+					}
+				}
+			]
+		},
+		{
+			"name": "statue",
+			"model": "http://115.68.23.109/hologram/model/venus.unity3d",
+			"desc": [
+				{
+					"language": "Korean",
+					"name": "반가사유상",
+					"order": "ㅂ",
+					"group": "삼국시대",
+					"list": {
+						"image": "http://115.68.23.109/hologram/image/crown.png",
+						"이름": "반가사유상",
+						"소장기관": "국립중앙박물관",
+						"지정구분": "국보 xx호"
+					},
+					"detail": {
+						"image": "http://115.68.23.109/hologram/image/crown_detail.png",
+						"feature": "생동감 있는 표현 입가에 머금은 생기있는 미소",
+						"국적/시대": "한국- 삼국시대 xx",
+						"재질": "금속",
+						"크기": "높이 xxcm",
+						"소장기관": "국립중앙박물관",
+						"지정구분": " 국보 xx호",
+						"유물번호": "덕수 - 00000-000"
+					}
+				},
+				{
+					"language": "English",
+					"name": "statue",
+					"order": "ㅇ",
+					"group": "Samkuk",
+					"list": {
+						"image": "http://115.68.23.109/hologram/image/crown.png",
+						"이름": "statue",
+						"소장기관": "Museum",
+						"지정구분": "...."
+					},
+					"detail": {
+						"image": "http://115.68.23.109/hologram/image/crown_detail.png",
+						"feature": "statue statue",
+						"국적/시대": "Samkuk xx",
+						"재질": "Bronze",
+						"크기": "Height xxcm",
+						"소장기관": "Museum",
+						"지정구분": " ....",
+						"유물번호": "... - 00000-000"
+					}
+				}
+			]
+		}
+	]
+}

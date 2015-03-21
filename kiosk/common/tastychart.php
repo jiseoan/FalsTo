@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 function getTastyChartJsondata($base_URL, $urlenc, $db) {
   date_default_timezone_set('Asia/Seoul');
   $year = date("Y");

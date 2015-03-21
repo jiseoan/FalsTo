@@ -1,11 +1,11 @@
-<?php include 'env.php'; ?>
+﻿<?php include 'env.php'; ?>
 <?PHP
 class XDBClass {
-	var $db_ip;
-	var $db_port;
-	var $db_user;
-	var $db_pwd;
-	var $db_name;
+  var $db_ip;
+  var $db_port;
+  var $db_user;
+  var $db_pwd;
+  var $db_name;
 	var $conn;
 	var $result;
 
@@ -16,7 +16,7 @@ class XDBClass {
 		$this->db_pwd = $db_pwd;
 		$this->db_name = $db_name;
 		$this->conn = null;
-		$this->result = null;
+    $this->result = null;
 	}
 
 	function open() {
@@ -31,7 +31,7 @@ class XDBClass {
 
 	function close() {
 		$this->conn->close();
-		$this->conn = null;
+    $this->conn = null;
 	}
 	
 	function querySelect($str) {
@@ -46,7 +46,7 @@ class XDBClass {
 	function free() {
 		if ($this->result != null) {
 			$this->result->free();
-			$this->result = null;
+      $this->result = null;
 		}
 	}
 	

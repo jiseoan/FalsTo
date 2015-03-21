@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $compath = '/common/';
 if (isset($_SERVER["DOCUMENT_ROOT"]) && strlen($_SERVER["DOCUMENT_ROOT"]) > 0) {
   $compath = '..'.$compath;
@@ -28,15 +28,13 @@ if ($ok) {
 		}
 	}
   
-	$interval = 360; // 6분
-	$cur = time();
+	$interval = strtotime("+5 minutes");
+	$cur = time() + $interval;
 	$str = "SELECT ".$colname[date("w", $cur)]." as dayofweek, hourbegin FROM t_operating where enable = 'Y' order by idoperating desc limit 0, 1;";
 	$n = $db->querySelect($str);
 	if ($n == 1) {
 		$row = $db->goNext();
-    $begin = strtotime($row['hourbegin']);
-    $end = $begin + $interval;
-		if ($row['dayofweek'] != 'Y' && $cur >= $begin && $cur <= $end) {
+		if ($row['dayofweek'] != 'Y' && $cur >= strtotime($row['hourbegin']) && $cur <= (strtotime($row['hourbegin']) + $interval)) {
 		  $result = 'OK';
 		}
 	}

@@ -65,22 +65,23 @@ $rankingoutfile = $web_dir."/json/ranking.json";
 echo $constr."<br/>\r\n";
 echo $rankingoutfile."<br/>\r\n";
 
-$qrylist = array( array("B1F", "GOURMET 494", "WB1F", "003"),
-                  array("B1F", "GOURMET 494(아이템)", "WB1F", "004"),
-
+$qrylist = array( array("B1F", "푸드코트", "WB1F", "003"),
+                  array("B1F", "푸드코트(아이템)", "WB1F", "004"),
                   array("1F", "화장품", "W1F", "007"),
-                  array("1F", "B1F GOURMET 494", "W1F", "003"),
-                  array("1F", "B1F GOURMET 494(아이템)", "W1F", "004"),
-
+                  array("1F", "직영MD", "W1F", "008"),
                   array("2F", "의류", "W2F", "001"),
-
+                  array("2F", "직영MD", "W2F", "008"),
                   array("3F", "의류", "W3F", "001"),
                   array("3F", "슈즈", "W3F", "002"),
-
+                  array("3F", "데님", "W3F", "005"),
+                  array("3F", "직영MD", "W3F", "008"),
                   array("4F", "의류", "W4F", "001"),
-
+                  array("4F", "슈즈", "W4F", "002"),
+                  array("4F", "데님", "W4F", "005"),
+                  array("4F", "직영MD", "W4F", "008"),
                   array("5F", "기프트 멀티", "W5F", "006"),
-                  array("5F", "Life 스타일", "W5F", "009"));
+                  array("5F", "Life 스타일", "W5F", "009"),
+                  array("5F", "직영MD", "W5F", "008"));
 $nqrylist = count($qrylist);
 $arr = array();
 

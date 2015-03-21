@@ -1,4 +1,4 @@
-<?PHP
+﻿<?PHP
 $cpname = basename($_SERVER['PHP_SELF']);
 // 페이지당 항목 개수: $maxitem
 // 현재 페이지 번호: $curpage

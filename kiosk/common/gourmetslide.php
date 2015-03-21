@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 function getGourmetSlideJsondata($base_URL, $urlenc, $db) {
 	$imgs = array();
   $str = "select name from t_gourmet494slide order by seqno, name";

@@ -1,4 +1,4 @@
-<?PHP
+﻿<?PHP
 header("Content-Type:text/html; charset=UTF-8"); 
 header("Cache-Control:no-cache");
 header("Pragma:no-cache");
@@ -22,7 +22,6 @@ if ($ok) {
 	date_default_timezone_set('Asia/Seoul');
 	$releasename = "release/release_".date("Ymd_His").".zip";
 
-	set_time_limit(0);
 	$zip = new ZipArchive();
 	if ($zip->open($releasename, ZIPARCHIVE::OVERWRITE) == true) {
 		$zip->addEmptyDir('img');

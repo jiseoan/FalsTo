@@ -1,4 +1,4 @@
-<?php include 'env.php'; ?>
+﻿<?php include 'env.php'; ?>
 <?PHP
 class XDBClass {
   var $db_ip;

@@ -1,4 +1,4 @@
-<?php include '../cli/configure.php'; ?>
+﻿<?php include '../cli/configure.php'; ?>
 <?PHP
 $appid = isset($_GET["appid"]) ? $_GET["appid"] : (isset($_POST["appid"]) ? $_POST["appid"] : '');
 $configure = '';

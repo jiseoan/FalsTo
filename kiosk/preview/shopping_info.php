@@ -1,4 +1,4 @@
-<?php include '../common/db.php'; ?>
+﻿<?php include '../common/db.php'; ?>
 <?php include '../common/shoppinginfo.php'; ?>
 <?php
 $base_URL = "/kiosk/";

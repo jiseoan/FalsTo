@@ -1,1 +1,1 @@
-<img src="./image/copyrighttext.png" style="position:relative; top:18px;"/>
+﻿<img src="./image/copyrighttext.png" style="position:relative; top:18px;"/>
